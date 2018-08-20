@@ -1,0 +1,13 @@
+- hyphen
+/ slash
+^ equal_sign
+\ international3
+@ open_bracket
+[ close_bracket
+; semicolon
+: quote
+] backslash
+, comma
+. period
+/ slash
+_ international1

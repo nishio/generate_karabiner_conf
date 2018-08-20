@@ -1,0 +1,25 @@
+    [
+      {
+        "type": "input_source_if",
+        "input_sources": [
+          {
+            "input_mode_id": "com.apple.inputmethod.Japanese"
+          },
+          {
+            "input_mode_id": "com.apple.inputmethod.Japanese.Hiragana"
+          },
+          {
+            "input_mode_id": "com.apple.inputmethod.Japanese.Katakana"
+          },
+          {
+            "input_mode_id": "com.apple.inputmethod.Japanese.HalfWidthKana"
+          }
+        ]
+      },
+      {
+        "type": "frontmost_application_unless",
+        "bundle_identifiers": [
+          "^com\\.apple\\.loginwindow$"
+        ]
+      }
+    ]
