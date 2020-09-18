@@ -51,3 +51,5 @@ nLEFT	?
 nRIGHT	?
 _BASE	?
 _LEFT	?
+.BASE	comma
+/BASE	period

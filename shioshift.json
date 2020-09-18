@@ -4307,7 +4307,7 @@
           },
           "to": [
             {
-              "key_code": ",",
+              "key_code": "comma",
               "repeat": false
             }
           ],
@@ -4444,7 +4444,7 @@
           },
           "to": [
             {
-              "key_code": ".",
+              "key_code": "period",
               "repeat": false
             }
           ],
