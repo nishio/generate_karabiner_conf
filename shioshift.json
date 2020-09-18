@@ -1921,11 +1921,11 @@
           },
           "to": [
             {
-              "key_code": "p",
+              "key_code": "b",
               "repeat": false
             },
             {
-              "key_code": "i",
+              "key_code": "o",
               "repeat": false
             }
           ],
