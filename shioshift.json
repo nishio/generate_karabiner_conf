@@ -1,8 +1,8 @@
 {
-  "title": "Generative Orz",
+  "title": "Generative Shio Shift",
   "rules": [
     {
-      "description": "Program-generated Orz: Thumb-shift Keyboard Layout for Karabiner",
+      "description": "Program-generated Shio Shift: Thumb-shift Keyboard Layout for Karabiner",
       "manipulators": [
         {
           "from": {
@@ -1868,6 +1868,51 @@
             "simultaneous": [
               {
                 "key_code": "open_bracket"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "h",
+              "repeat": false
+            },
+            {
+              "key_code": "o",
+              "repeat": false
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese"
+                },
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.Hiragana"
+                },
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.Katakana"
+                },
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.HalfWidthKana"
+                }
+              ]
+            },
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^com\\.apple\\.loginwindow$"
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "open_bracket"
               },
               {
                 "key_code": "spacebar"
@@ -3322,6 +3367,51 @@
             "simultaneous": [
               {
                 "key_code": "z"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "n",
+              "repeat": false
+            },
+            {
+              "key_code": "e",
+              "repeat": false
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese"
+                },
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.Hiragana"
+                },
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.Katakana"
+                },
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.HalfWidthKana"
+                }
+              ]
+            },
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^com\\.apple\\.loginwindow$"
+              ]
+            }
+          ]
+        },
+        {
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "z"
               },
               {
                 "key_code": "spacebar"
@@ -4217,11 +4307,7 @@
           },
           "to": [
             {
-              "key_code": "n",
-              "repeat": false
-            },
-            {
-              "key_code": "e",
+              "key_code": ",",
               "repeat": false
             }
           ],
@@ -4358,11 +4444,7 @@
           },
           "to": [
             {
-              "key_code": "h",
-              "repeat": false
-            },
-            {
-              "key_code": "o",
+              "key_code": ".",
               "repeat": false
             }
           ],
@@ -4406,11 +4488,11 @@
           },
           "to": [
             {
-              "key_code": "b",
+              "key_code": "p",
               "repeat": false
             },
             {
-              "key_code": "o",
+              "key_code": "i",
               "repeat": false
             }
           ],
