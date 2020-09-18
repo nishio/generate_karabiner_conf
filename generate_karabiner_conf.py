@@ -7,8 +7,9 @@ RIGHT_THUMB_SHIFT = "lang1"
 ROMAJI_SECOND_SHIFT = "lang1"
 conditions_ja = json.load(open("conditions_ja.json"))
 
-
-simple_key_chains = open("SIMPLE_KEY_CHAINS.txt").read().strip().split("\n")
+# 日本語JISキーボードでキートップに書かれている文字からキーコードへの対応づけ
+lines = open("CHAR_TO_KEYCODE.txt").read().strip().split("\n")
+CHAR_TO_KEYCODE = {x[0]: x[2:] for x in lines}
 
 
 def build_karabiner_conf(title, desc):
@@ -112,15 +113,13 @@ def char_to_keycode(c):
 
 
 def generate(path, title, desc):
-    global special, CHAR_TO_KEYCODE
+    global special, simple_key_chains
     f = os.path.join(path, "SPECIAL.txt")
     lines = open(f).read().strip().split("\n")
     special = dict(line.split("\t") for line in lines)
 
-    # 日本語JISキーボードでキートップに書かれている文字からキーコードへの対応づけ
-    f = os.path.join(path, "CHAR_TO_KEYCODE.txt")
-    lines = open("CHAR_TO_KEYCODE.txt").read().strip().split("\n")
-    CHAR_TO_KEYCODE = {x[0]: x[2:] for x in lines}
+    f = os.path.join(path, "SIMPLE_KEY_CHAINS.txt")
+    simple_key_chains = open(f).read().strip().split("\n")
 
     json.dump(
         build_karabiner_conf(title, desc),
