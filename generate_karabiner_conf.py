@@ -12,7 +12,13 @@ lines = open("CHAR_TO_KEYCODE.txt").read().strip().split("\n")
 CHAR_TO_KEYCODE = {x[0]: x[2:] for x in lines}
 
 
-def build_karabiner_conf(title, desc):
+def build_karabiner_conf(title, desc, special_=None, simple_key_chains_=None):
+    global special, simple_key_chains
+    if special_ is not None:
+        special = special_
+    if simple_key_chains_ is not None:
+        simple_key_chains = simple_key_chains_
+
     return dict(
         title=title,
         rules=[dict(
@@ -72,7 +78,7 @@ def build_simultaneous(*args):
 
 
 def build_special_to(base, mod):
-    target = special[base + mod]
+    target = special.get(base + mod, "?")
     if target == "?":
         return None
     ret = []
@@ -126,8 +132,9 @@ def generate(path, title, desc):
         open(f"{path}.json", "w"), indent=2)
 
 
-generate("orz", "Generative Orz",
-         "Program-generated Orz: Thumb-shift Keyboard Layout for Karabiner")
+if __name__ == "__main__":
+    generate("orz", "Generative Orz",
+             "Program-generated Orz: Thumb-shift Keyboard Layout for Karabiner")
 
-generate("shioshift", "Generative Shio Shift",
-         "Program-generated Shio Shift: Thumb-shift Keyboard Layout for Karabiner")
+    generate("shioshift", "Generative Shio Shift",
+             "Program-generated Shio Shift: Thumb-shift Keyboard Layout for Karabiner")
