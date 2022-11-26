@@ -1,0 +1,55 @@
+1LEFT	^slash #はてな
+1RIGHT	?
+2LEFT	slash #中黒
+2RIGHT	?
+3LEFT	?
+3RIGHT	?
+4LEFT	close_bracket #「
+4RIGHT	?
+5LEFT	backslash #」
+5RIGHT	?
+6BASE	?
+6LEFT	?
+6RIGHT	?
+7LEFT	?
+7RIGHT	?
+8LEFT	?
+8RIGHT	?
+9LEFT	^8 #（
+9RIGHT	?
+0LEFT	^9 #）
+0RIGHT	?
+-LEFT	?
+-RIGHT	?
+^BASE	?
+^LEFT	?
+^RIGHT	?
+\BASE	?
+\LEFT	?
+\RIGHT	?
+qBASE	?
+qRIGHT	?
+yBASE	?
+yLEFT	?
+yRIGHT	?
+@BASE	?
+[BASE	?
+[LEFT	?
+[RIGHT	?
+hBASE	?
+hLEFT	?
+hRIGHT	?
+:LEFT	?
+]BASE	?
+]LEFT	?
+]RIGHT	?
+zBASE	?
+zRIGHT	?
+xLEFT	hyphen
+nBASE	?
+nLEFT	?
+nRIGHT	?
+_BASE	?
+_LEFT	?
+.BASE	comma
+/BASE	period
