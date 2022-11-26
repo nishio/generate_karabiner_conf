@@ -1,5 +1,5 @@
 1LEFT	^slash #はてな
-1RIGHT	?
+1RIGHT	^1 #!
 2LEFT	slash #中黒
 2RIGHT	?
 3LEFT	?
@@ -29,14 +29,14 @@
 \RIGHT	?
 qBASE	?
 qRIGHT	?
-yBASE	?
+yBASE	close_bracket #「
 yLEFT	?
 yRIGHT	?
 @BASE	?
 [BASE	?
 [LEFT	?
 [RIGHT	?
-hBASE	?
+hBASE	backslash #」
 hLEFT	?
 hRIGHT	?
 :LEFT	?
@@ -49,7 +49,7 @@ xLEFT	hyphen
 nBASE	?
 nLEFT	?
 nRIGHT	?
-_BASE	?
+_BASE	slash #中黒
 _LEFT	?
 .BASE	comma
 /BASE	period
