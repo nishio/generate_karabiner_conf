@@ -138,3 +138,6 @@ if __name__ == "__main__":
 
     generate("shioshift", "Generative Shio Shift",
              "Program-generated Shio Shift: Thumb-shift Keyboard Layout for Karabiner")
+
+    generate("nishioshift", "Generative Shio Shift (nishio ver.)",
+             "nishioshift: Thumb-shift Keyboard Layout for Karabiner")
